@@ -34,23 +34,28 @@
             <scope>compile</scope>
         </dependency>
 
-        <!-- Cucumber -->
-        <!-- Source: https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-junit</artifactId>
-            <version>7.34.3</version>
-            <scope>test</scope>
-        </dependency>
-
-
         <!-- Cucumber Java -->
-        <!-- Source: https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>7.34.3</version>
-            <scope>compile</scope>
+            <version>7.15.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Cucumber JUnit Platform Engine -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit-platform-engine</artifactId>
+            <version>7.15.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- JUnit 5 -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.10.1</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
