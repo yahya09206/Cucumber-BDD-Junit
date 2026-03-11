@@ -18,5 +18,7 @@ public class Google_StepDef {
         String expectedTitle = "Google";
 
         Assertions.assertEquals(actualTitle, expectedTitle);
+
+        Driver.closeDriver();
     }
 }
