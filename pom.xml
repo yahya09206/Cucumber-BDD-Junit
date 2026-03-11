@@ -58,6 +58,14 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- Source: https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>7.34.3</version>
+            <scope>test</scope>
+        </dependency>
+
         <!-- Junit Platform Suite -->
         <!-- Source: https://mvnrepository.com/artifact/org.junit.platform/junit-platform-suite-api -->
         <dependency>
