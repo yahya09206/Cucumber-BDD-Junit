@@ -1,7 +1,7 @@
 package com.yahya.utils;
 
 
-import org.junit.jupiter.api.Assertions;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
 import java.util.Set;
@@ -40,19 +40,19 @@ public class BrowserUtil {
         // Assert that title contains "Etsy"
         String actualTitle = Driver.getDriver().getTitle();
 
-        Assertions.assertTrue(actualTitle.contains(expectedTitle));
+        Assert.assertTrue(actualTitle.contains(expectedTitle));
 
     }
 
     public static void verifyTitle(String expectedTitle){
 
-        Assertions.assertEquals(Driver.getDriver().getTitle(), expectedTitle);
+        Assert.assertEquals(Driver.getDriver().getTitle(), expectedTitle);
 
     }
 
     public static void verifyTitleContains(WebDriver driver, String expectedTitle){
 
-        Assertions.assertTrue(driver.getTitle().contains(expectedTitle));
+        Assert.assertTrue(driver.getTitle().contains(expectedTitle));
 
     }
 }

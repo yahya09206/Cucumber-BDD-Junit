@@ -3,7 +3,7 @@ package com.yahya.step_definitions;
 import com.yahya.utils.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.jupiter.api.Assertions;
+import org.junit.Assert;
 
 public class Google_StepDef {
 
@@ -17,7 +17,7 @@ public class Google_StepDef {
         String actualTitle = Driver.getDriver().getTitle();
         String expectedTitle = "Google";
 
-        Assertions.assertEquals(actualTitle, expectedTitle);
+        Assert.assertEquals(actualTitle, expectedTitle);
 
         Driver.closeDriver();
     }
