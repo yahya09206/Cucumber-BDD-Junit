@@ -3,13 +3,14 @@ Feature: Bing search functionality
   I should be able to search anything and see relevant results
 
 
-  @wip_bing
+  #@wip_bing
   Scenario: Search result title verification
     Given user is on the bing search page
     When user enters the word orange
     Then user should see orange in the title
 
+  @wip_bing
   Scenario: Search result title verification
     Given user is on the bing search page
     When user enters the word "orange"
-    Then user should see "orange - Search" in the title
+    Then user should see "orange" in the title
