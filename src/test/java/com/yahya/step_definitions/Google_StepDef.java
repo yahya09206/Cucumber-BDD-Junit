@@ -1,6 +1,7 @@
 package com.yahya.step_definitions;
 
 import com.yahya.pages.GoogleSearchPage;
+import com.yahya.utils.BrowserUtil;
 import com.yahya.utils.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -28,10 +29,12 @@ public class Google_StepDef {
     @When("user enters the word apple")
     public void user_enters_the_word_apple() {
 
+        googleSearchPage.searchWord();
 
     }
     @Then("user should see apple in the title")
     public void user_should_see_apple_in_the_title() {
 
+        BrowserUtil.verifyTitle("apple - Google Search");
     }
 }
