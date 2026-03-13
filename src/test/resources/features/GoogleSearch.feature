@@ -6,3 +6,9 @@ Feature: Google search functionality
   Scenario: Search page default title verification
     When user is on the google search page
     Then user should see title is google
+
+
+  Scenario: Search result title verification
+    Given user is on the google search page
+    When user enters the word apple
+    Then user should see apple in the title
