@@ -16,9 +16,9 @@ public class BingSearchPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    public void searchBox(){
+    public void searchBox(String word){
 
-        searchBox.sendKeys("orange", Keys.ENTER);
+        searchBox.sendKeys(word, Keys.ENTER);
 
     }
 }
