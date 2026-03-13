@@ -8,6 +8,7 @@ Feature: Library login feature
     Given user is on the login page of the library application
 
 
+  @smoke
   Scenario: Login as librarian
     #Given user is on the login page of the library application
     When user enters librarian username

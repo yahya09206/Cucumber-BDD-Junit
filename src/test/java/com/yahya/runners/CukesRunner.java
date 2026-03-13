@@ -12,7 +12,7 @@ import static io.cucumber.core.options.Constants.*;
 @SelectClasspathResource("features")
 @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "com.yahya.step_definitions")
 @ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty, html:target/cucumber-report.html")
-@ConfigurationParameter(key = "cucumber.execution.dry-run", value = "false")  // Use string literal
-//@ConfigurationParameter(key = FILTER_TAGS_PROPERTY_NAME, value = "@smoke")
+@ConfigurationParameter(key = "cucumber.execution.dry-run", value = "true")  // Use string literal
+@ConfigurationParameter(key = FILTER_TAGS_PROPERTY_NAME, value = "@smoke")
 public class CukesRunner {
 }
