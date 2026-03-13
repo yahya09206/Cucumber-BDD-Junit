@@ -1,11 +1,14 @@
 package com.yahya.step_definitions;
 
+import com.yahya.pages.GoogleSearchPage;
 import com.yahya.utils.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
 public class Google_StepDef {
+
+    GoogleSearchPage googleSearchPage = new GoogleSearchPage();
 
     @When("user is on the google search page")
     public void user_is_on_the_google_search_page() {
