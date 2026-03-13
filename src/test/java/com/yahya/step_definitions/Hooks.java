@@ -1,5 +1,6 @@
 package com.yahya.step_definitions;
 
+import com.yahya.utils.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
@@ -19,6 +20,7 @@ public class Hooks {
     @After
     public void teardownMethod(){
         System.out.println("@After ---> runs after each scenario");
+        Driver.closeDriver();
     }
 
     @BeforeStep
