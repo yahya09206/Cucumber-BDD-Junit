@@ -21,4 +21,13 @@ public class Google_StepDef {
 
         Driver.closeDriver();
     }
+
+    @When("user enters the word apple")
+    public void user_enters_the_word_apple() {
+
+    }
+    @Then("user should see apple in the title")
+    public void user_should_see_apple_in_the_title() {
+
+    }
 }
