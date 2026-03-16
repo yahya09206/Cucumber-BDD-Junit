@@ -21,6 +21,7 @@ public class Hooks {
 
         // only screenshot for failed scenarios
         if (scenario.isFailed()){
+            // store pic in byte
             byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot, "image/png", scenario.getName());
         }
