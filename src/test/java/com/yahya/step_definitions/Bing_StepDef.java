@@ -10,6 +10,7 @@ import io.cucumber.java.en.When;
 
 public class Bing_StepDef {
 
+    // Declare at global level
     BingSearchPage bingSearchPage = new BingSearchPage();
 
     @Given("user is on the bing search page")
